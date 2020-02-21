@@ -1,12 +1,12 @@
 package search;
 
-import base.BaseTest;
+import base.BaseTests;
 import org.testng.annotations.Test;
 import pages.ResultsPage;
 
 import static org.testng.Assert.*;
 
-public class SearchTests extends BaseTest {
+public class SearchTests extends BaseTests {
 
     ResultsPage resultsPage;
 

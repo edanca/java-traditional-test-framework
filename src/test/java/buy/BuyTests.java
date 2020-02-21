@@ -1,11 +1,11 @@
 package buy;
 
-import base.BaseTest;
+import base.BaseTests;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class BuyTests extends BaseTest {
+public class BuyTests extends BaseTests {
 
     @Test
     void testCantBuyWithoutLogin() {

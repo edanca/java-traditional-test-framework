@@ -12,7 +12,7 @@ import java.text.ParseException;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
-public class BaseTest {
+public class BaseTests {
 
     private WebDriver driver;
     protected HomePage homePage;
