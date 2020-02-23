@@ -1,0 +1,30 @@
+version: "3.2"
+
+services:
+  chrome:
+    image: selenium/standalone-chrome-debug:3.141.59-xenon
+    hostname: chrome
+    container_name: chrome
+    ports:
+      - "4444:4444"
+      - "5900:5900"
+    volumes:
+      - /dev/shm:/dev/shm
+    networks:
+      - default
+
+  test:
+    hostname: java-test
+    container_name: java-test
+    build:
+      context: .
+    environment:
+      MY_ENV: docker
+    depends_on:
+      - chrome
+    networks:
+      - default
+
+networks:
+  default:
+    driver: bridge

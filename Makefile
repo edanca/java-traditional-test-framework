@@ -5,4 +5,12 @@ help: # Display help
 		}' $(MAKEFILE_LIST) | sort
 
 test: ## Run tests.
-	mvn clean verify
+	@mvn clean verify
+
+docker: ## Run tests on docker containers
+	@docker-compose up --build
+
+docker-clean: ## Remove exited containers
+	@docker-compose down
+
+.PHONY: docker test

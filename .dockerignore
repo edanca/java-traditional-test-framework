@@ -1,0 +1,17 @@
+.env
+
+.idea/
+.vscode/
+
+.gitignore
+.dockerignore
+
+.DS_Store
+
+*.iml
+
+Dockerfile
+docker-compose.yml
+docker-compose.yaml
+
+target/

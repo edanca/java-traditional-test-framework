@@ -11,12 +11,17 @@ Includes modular Framework architecture to build interactions between *Tests* an
 
 Need to install:
 
-- Java 8 or higher.
+- Java 8 or higher, used OpenJDK 11.
 - Maven.
-
-Import maven dependencies.
+- Chromedriver or Docker
 
 ## How to run
+
+### Locally
+
+In order to run the test first you have to install Chromedriver in your machine and include it in your PATH.
+**This project does not contains Chromedriver** executor to maintain the Package's small size.
+You have to install the Chromedriver correspondent for you current Chrome browser version.
 
 From OS based on Unix:
 
@@ -30,8 +35,33 @@ From Windows, using maven:
 mvn clean verify
 ```
 
+### With Docker
+
+In order to run with docker, firstly you have to install docker and docker-compose.
+
+From OS based on Unix:
+
+```
+make docker-test
+```
+
+From Windows, using docker-compose:
+
+```
+docker-compose up --build
+```
+
 ## Pending to include
 
 - Reports.
-- Parallel execution.
+- Selenium Grid.
 - Include more tests.
+- Parallel execution.
+
+## Available commands
+
+To see available commands write in command line:
+
+```
+make help
+```
