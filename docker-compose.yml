@@ -12,6 +12,10 @@ services:
       - /dev/shm:/dev/shm
     networks:
       - default
+    environment:
+      - GRID_MAX_SESSION=4
+      - GRID_BROWSER_TIMEOUT=300
+      - GRID_TIMEOUT=300
 
   test:
     hostname: java-test

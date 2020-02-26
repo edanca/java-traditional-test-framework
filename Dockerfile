@@ -3,7 +3,7 @@ MAINTAINER Eduardo Cardenas
 
 WORKDIR /tests
 
-COPY pom.xml .
+COPY pre-pom.xml ./pom.xml
 
 RUN mvn clean install
 

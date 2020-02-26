@@ -65,9 +65,6 @@
                     <includes>
                         <include>**/*Tests.java</include>
                     </includes>
-                    <suiteXmlFiles>
-                        <suiteXmlFile>testng.xml</suiteXmlFile>
-                    </suiteXmlFiles>
                 </configuration>
             </plugin>
 

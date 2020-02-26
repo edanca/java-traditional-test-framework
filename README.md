@@ -17,6 +17,8 @@ Need to install:
 
 ## How to run
 
+- Tests are run in parallel.
+
 ### Locally
 
 In order to run the test first you have to install Chromedriver in your machine and include it in your PATH.
@@ -56,7 +58,6 @@ docker-compose up --build
 - Reports.
 - Selenium Grid.
 - Include more tests.
-- Parallel execution.
 
 ## Available commands
 
