@@ -3,9 +3,7 @@ package pages;
 import base.Base;
 import components.BuyBox;
 import components.ProductOverview;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 public class DetailsPage extends Base {
 

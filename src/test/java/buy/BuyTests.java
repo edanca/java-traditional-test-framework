@@ -12,7 +12,7 @@ public class BuyTests extends BaseTests {
         String expected_iamNewText = "Soy nuevo";
         String iamNewText = homePage
                 .searchProduct("iphone")
-                .selectResultDisclaimerInPosition(3)
+                .clickResultDescriptionInPosition(3)
                 .clickBuyInBuyBox()
                 .getIamNewText();
 

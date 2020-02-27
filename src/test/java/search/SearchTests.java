@@ -16,7 +16,7 @@ public class SearchTests extends BaseTests {
         resultsPage = homePage.searchProduct(productToSearch);
         int itemPrice = resultsPage
                 .goToPage(2)
-                .selectResultImageInPosition(2)
+                .clickResultImageInPosition(2)
                 .getItemPrice();
 
         assertTrue(itemPrice > 0);

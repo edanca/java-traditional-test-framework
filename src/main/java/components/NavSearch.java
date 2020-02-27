@@ -7,11 +7,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
-public class Navigation extends Base {
+public class NavSearch extends Base {
 
     @FindBy(name = "as_word") public WebElement searchInput;
 
-    public Navigation(WebDriver driver) {
+    public NavSearch(WebDriver driver) {
         super(driver);
         PageFactory.initElements(new AjaxElementLocatorFactory(driver, 60), this);
     }
