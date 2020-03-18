@@ -20,7 +20,7 @@ public class PromotionsBox extends Base {
     }
 
     private WebElement getElementFromPromotionsList(int position) {
-        return promotionsItems.get(position);
+        return promotionsItems.get(position - 1);
     }
 
     public PromotionsBox clickOnPromotionElementFromList(int position) {

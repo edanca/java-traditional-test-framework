@@ -17,7 +17,12 @@ public class DetailsPage extends Base {
     }
 
     public int getItemPrice() {
-        String price = productOverview.itemPrice().getText();
+        String price = productOverview.getItemPrice();
+        return (int) this.convertStringToNumber(price);
+    }
+
+    public int getItemPriceFromOffer() {
+        String price = productOverview.getItemPriceFromOffer();
         return (int) this.convertStringToNumber(price);
     }
 

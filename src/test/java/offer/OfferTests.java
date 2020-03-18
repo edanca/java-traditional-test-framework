@@ -18,7 +18,7 @@ public class OfferTests extends BaseTests {
                 .clickOnNavMenu(menuText)
                 .clickOnCategory(categoryName)
                 .clickOnPromotionItem(5)
-                .getItemPrice();
+                .getItemPriceFromOffer();
 
         assertTrue(itemPrice > 0);
     }
